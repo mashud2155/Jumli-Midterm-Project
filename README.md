@@ -30,11 +30,11 @@ The task creation and editing forms are built using Django forms and rendered th
 
 This template is responsible for rendering the form to create and edit tasks. It uses **Bootstrap** for styling to provide a clean and responsive layout.
 
-#### 'task_confirm_delete.html'
+### 'task_confirm_delete.html'
 
 This template is responsible for rendering the confirmation page for deleting a task. It asks the user to confirm the deletion and provides buttons to either delete the task or cancel the operation.
 
-#### 'task_list.html'
+### 'task_list.html'
 
 This template is responsible for rendering the list of tasks. It includes a search bar, a button to create a new task, and a table displaying the task's details with options to edit or delete each task. It uses Bootstrap for styling to provide a clean and responsive layout
 
