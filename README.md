@@ -20,12 +20,6 @@ The `Task` model represents a task with the following fields:
 - `due_date`: The due date for the task *(DateField, nullable and blank)*
 - `status`: The status of the task *(CharField, default: 'pending')*
 
-#### Key Methods:
-
-- `__str__`: Returns the title of the task
-- `save`: Custom save method with additional behavior
-- `check_and_update_overdue_status`: Checks if the task is overdue and updates the status
-
 ## 📄 Forms
 
 The task creation and editing forms are built using Django forms and rendered through the `task_form.html` template.
