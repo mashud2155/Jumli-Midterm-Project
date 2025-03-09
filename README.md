@@ -64,7 +64,7 @@ Open your browser and navigate to: [http://127.0.0.1:8000/](http://127.0.0.1:800
 - Edit Task: Click on a task title to update its details.
 - Overdue Tasks: Tasks will automatically be marked as overdue if the due date has passed.
 
-Prerequisites
+## Prerequisites
 
 Ensure you have the following installed:
 
