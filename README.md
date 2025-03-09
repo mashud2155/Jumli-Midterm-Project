@@ -84,7 +84,7 @@ Visual Studio Code (code editor)
     - Open Visual Studio Code (or your preferred terminal).
     - Navigate to your project directory using:
       ```bash
-      cd path/to/your/project
+      cd path/to/your/task_manager
       ```
     - Run the following command to start the development server:
       ```bash
