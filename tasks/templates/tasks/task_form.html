@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ form_title }}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .card {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .btn {
+            margin-right: 5px;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <h1 class="mb-4">{{ form_title }}</h1>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <a href="{% url 'task_list' %}" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

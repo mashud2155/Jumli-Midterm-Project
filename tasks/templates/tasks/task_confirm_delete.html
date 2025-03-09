@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        button, .btn-secondary {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #dc3545;
+            cursor: pointer;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ form_title }}</h1>
+        <form method="post">
+            {% csrf_token %}
+            <p>Are you sure you want to delete the task "{{ task.title }}"?</p>
+            <button type="submit">Delete</button>
+            <a href="{% url 'task_list' %}" class="btn-secondary">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>
