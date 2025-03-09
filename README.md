@@ -74,7 +74,7 @@ Python (for running Django)
 
 Visual Studio Code (code editor)
 
-## Getting Started
+## TO RUN MY PROJECT
 
 1. **Start XAMPP Services:**
     - Open the XAMPP Control Panel.
