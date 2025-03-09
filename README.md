@@ -63,3 +63,36 @@ Open your browser and navigate to: [http://127.0.0.1:8000/](http://127.0.0.1:800
 - View Tasks: Browse the task list page to see all tasks.
 - Edit Task: Click on a task title to update its details.
 - Overdue Tasks: Tasks will automatically be marked as overdue if the due date has passed.
+
+Prerequisites
+
+Ensure you have the following installed:
+
+XAMPP (for database)
+
+Python (for running Django)
+
+Visual Studio Code (code editor)
+
+## Getting Started
+
+1. **Start XAMPP Services:**
+    - Open the XAMPP Control Panel.
+    - Click*Start on both Apache and MySQL modules.
+
+2. **Run the Application:**
+    - Open Visual Studio Code (or your preferred terminal).
+    - Navigate to your project directory using:
+      ```bash
+      cd path/to/your/project
+      ```
+    - Run the following command to start the development server:
+      ```bash
+      python manage.py runserver
+      ```
+
+3. **Access the Application:**
+    - Open your browser and go to:
+      ```
+      http://localhost:8000
+      ```
