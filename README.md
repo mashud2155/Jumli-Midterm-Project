@@ -1,24 +1,24 @@
-📝 Task Manager
+# 📝 Task Manager
 
 A simple Django-based Task Manager application that allows users to create, view, and manage tasks. Each task has a title, description, due date, and status.
 
-📌 Features
+## 📌 Features
 
 - ✅ Create new tasks
 - 📋 View a list of tasks
 - ✏️ Edit existing tasks
 - ⏳ Automatically mark tasks as overdue if the due date has passed
 
-📊 Models
+## 📊 Models
 
-🗂️ Task Model
+### 🗂️ Task Model
 
 The `Task` model represents a task with the following fields:
 
-- `title`: The title of the task *(CharField)*
-- `description`: A detailed description of the task *(TextField)*
-- `due_date`: The due date for the task *(DateField, nullable and blank)*
-- `status`: The status of the task *(CharField, default: 'pending')*
+- `title`: The title of the task (CharField)
+- `description`: A detailed description of the task (TextField)
+- `due_date`: The due date for the task (DateField, nullable and blank)
+- `status`: The status of the task (CharField, default: 'pending')
 
 ## 📄 Forms
 
@@ -34,40 +34,32 @@ This template is responsible for rendering the form to create and edit tasks. It
 
 Follow these steps to set up and run the Task Manager locally:
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/task_manager.git
-cd task_manager
-```
-
-### 2. Set Up a Virtual Environment
+### 1. Set Up a Virtual Environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### 3. Apply Migrations
+### 2. Apply Migrations
 
 ```bash
 python manage.py migrate
 ```
 
-### 4. Run the Development Server
+### 3. Run the Development Server
 
 ```bash
 python manage.py runserver
 ```
 
-### 5. Access the Application
+### 4. Access the Application
 
 Open your browser and navigate to: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
- 📘 Usage
+## 📘 Usage
 
 - Add Task: Click the "Add Task" button and fill out the form.
 - View Tasks: Browse the task list page to see all tasks.
 - Edit Task: Click on a task title to update its details.
 - Overdue Tasks: Tasks will automatically be marked as overdue if the due date has passed.
-
